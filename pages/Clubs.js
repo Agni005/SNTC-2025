@@ -4,7 +4,7 @@ import Beams from "@/components/Beams";
 export default function ClubsPage() {
   return (
     <>
-      {/* ✅ Fullscreen Beams background */}
+     
       <div className="fixed inset-0 -z-10">
         <Beams
           beamWidth={2}
@@ -18,17 +18,17 @@ export default function ClubsPage() {
         />
       </div>
 
-      {/* ✅ Blur Header */}
+     
       <div className="bg-white/10 backdrop-blur-md h-[100px] sticky top-0 w-full rounded-2xl p-10 text-4xl text-center z-10" style={{ fontFamily: "Josefin Sans" }}>
         Explore Our Clubs
       </div>
 
-      {/* ✅ Scrollable ClubMap section with frosted gradient bg */}
+     
       <div className=" mx-auto w-fit">
         <ClubMap />
 
         <div className="h-[300px] flex items-center justify-center">
-          {/* Optional: Add footer or scroll prompt here */}
+          
         </div>
       </div>
     </>
