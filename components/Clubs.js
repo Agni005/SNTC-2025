@@ -22,8 +22,8 @@ export default function ClubMap() {
   const [position, setPosition] = useState({ top: 0, left: 0 });
 
   const showClub = (key, cx, cy) => {
-    const OFFSET_X = 130; // pixels right of the dot
-    const OFFSET_Y = -30; // slight upward offset
+    const OFFSET_X = 130; 
+    const OFFSET_Y = -30; 
 
     setSelectedClub(key);
     setPosition({
@@ -34,7 +34,7 @@ export default function ClubMap() {
 
   return (
     <div ref={containerRef} className="relative w-full flex justify-center py-20 text-white min-h-[1500px]">
-      {/* ✅ Floating Club Info next to dot */}
+      
       {selectedClub && (
         <div
           className="absolute z-50 bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 w-[280px]"
